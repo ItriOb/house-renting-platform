@@ -8,7 +8,7 @@
             <p>Where would you like to go</p>
             <a href="#scrolltobook" class="boxed-btn3" id="book">Book now</a>
         </div>
-    </div>
+</div>
 <div class="where_togo_area" id="scrolltobook">
         <div class="container">
             <div class="row align-items-center">
@@ -26,14 +26,12 @@
                             </div>
                             <div class="input_field">
                             <label for="Check In" class="label">Check In : </label>
-                            <input type="date" name placeholder="Check In" >
+                            <input type="date" placeholder="Check In" >
                             </div>
                             <div class="input_field">
                             <label for="Check Out" class="label">Check Out : </label>
                             <input type="date" placeholder="Check Out">
                             </div>
-                            
-                            
                         </form>
                     </div>
                 </div>
@@ -44,7 +42,7 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
 
 
