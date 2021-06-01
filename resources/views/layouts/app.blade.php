@@ -53,10 +53,10 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="index.html">Home</a></li>
-                                            <li><a href="#">Houses<i class="ti-angle-down"></i></a>
+                                            <li><a class="active" href="{{route('home')}}">Home</a></li>
+                                            <li>Houses<i class="ti-angle-down"></i>
                                                 <ul class="submenu">
-                                                        <li><a href="#">Houses List </a></li>
+                                                        <li><a href="{{route('houselist')}}">Houses List </a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
