@@ -6698,7 +6698,23 @@ html{
 }
 
 #houselist{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
+
+#housefound{
+  margin-bottom: 20px;
+}
+
+
+.thumb {
+  max-width: 100%;
+  height: 300px;
+}
+
+#checkin{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 
 /*# sourceMappingURL=style.css.map */

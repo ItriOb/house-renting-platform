@@ -3,9 +3,44 @@
 
 
 @section('content')
+<div class="where_togo_area" id="scrolltobook">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="form_area">
+                        <h3>Where you want to go?</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="search_wrap">
+                        <form class="search_form" action="#">
+                            <div class="input_field">
+                            <label for="place" class="label">Place : </label>
+                                <input type="text" name="place" placeholder="Where to go?">
+                            </div>
+                            <div class="input_field">
+                            <label for="Check In" class="label">Check In : </label>
+                            <input type="date" placeholder="Check In" >
+                            </div>
+                            <div class="input_field">
+                            <label for="Check Out" class="label">Check Out : </label>
+                            <input type="date" placeholder="Check Out">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="search_btn">
+                        <button class="boxed-btn4 " type="submit" >Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
 <div class="popular_places_area">
     <div class="container">
         <h1 id="houselist">Houses List</h1>
+        <h3 id="housefound">12 houses found</h3>
         <div class="row">
                 <div class="row">
                         <div class="col-lg-6 col-md-6">
@@ -24,7 +59,6 @@
                                          <i class="fa fa-star"></i> 
                                          <i class="fa fa-star"></i> 
                                          <i class="fa fa-star"></i>
-                                         <a href="#">(20 Review)</a>
                                     </span>
                                     <div class="days">
                                         <i class="fa fa-clock-o"></i>
@@ -38,7 +72,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single_place">
                             <div class="thumb">
-                                <img src="img/place/2.png" alt="">
+                                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="">
                                 <a href="#" class="prise">$500</a>
                             </div>
                             <div class="place_info">
@@ -51,7 +85,6 @@
                                          <i class="fa fa-star"></i> 
                                          <i class="fa fa-star"></i> 
                                          <i class="fa fa-star"></i>
-                                         <a href="#">(20 Review)</a>
                                     </span>
                                     <div class="days">
                                         <i class="fa fa-clock-o"></i>

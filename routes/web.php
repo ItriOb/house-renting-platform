@@ -21,3 +21,7 @@ Route::get('/houses', function () {
     return view('main.houseslist');
 })->name('houselist');
 
+Route::get('/results', function () {
+    return view('main.houseresults');
+})->name('houseresults');
+
