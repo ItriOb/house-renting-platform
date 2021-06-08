@@ -3,48 +3,25 @@
 
 
 @section('content')
-<div class="where_togo_area" id="scrolltobook">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="form_area">
-                        <h3>Where you want to go?</h3>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="search_wrap">
-                        <form class="search_form" action="#">
-                            <div class="input_field">
-                            <label for="place" class="label">Place : </label>
-                                <input type="text" name="place" placeholder="Where to go?">
-                            </div>
-                            <div class="input_field">
-                            <label for="Check In" class="label">Check In : </label>
-                            <input type="date" placeholder="Check In" >
-                            </div>
-                            <div class="input_field">
-                            <label for="Check Out" class="label">Check Out : </label>
-                            <input type="date" placeholder="Check Out">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="search_btn">
-                        <button class="boxed-btn4 " type="submit" >Search</button>
-                    </div>
+<div class="bradcam_area bradcam_bg_4">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Houses List</h3>
                 </div>
             </div>
         </div>
+    </div>
 </div>
 <div class="popular_places_area">
     <div class="container">
-        <h1 id="houselist">Houses List</h1>
-        <h3 id="housefound">12 houses found</h3>
+    <h1 id="housefound">12 houses found</h1> 
         <div class="row">
                 <div class="row">
                         <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
+                            <a href="{{route('contact')}}">
+                                <div class="single_place">
                             <div class="thumb">
                                 <img src="https://static.onecms.io/wp-content/uploads/sites/37/2016/02/15230656/white-modern-house-curved-patio-archway-c0a4a3b3.jpg" alt="">
                                 <a href="#" class="prise">$500</a>
@@ -67,6 +44,8 @@
                                 </div>
                             </div>
                         </div>
+                            </a>
+                            
                     </div>
                     
                     <div class="col-lg-6 col-md-6">

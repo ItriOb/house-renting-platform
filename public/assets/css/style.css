@@ -3588,9 +3588,10 @@ h3 {
 /*=================== contact form start ====================*/
 /* line 45, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_contact.scss */
 .contact-title {
-  font-size: 27px;
+  font-size: 100px;
   font-weight: 600;
   margin-bottom: 20px;
+  padding-top: 50px;
 }
 
 /* line 53, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_contact.scss */
@@ -6698,11 +6699,11 @@ html{
 }
 
 #houselist{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #housefound{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 
@@ -6716,5 +6717,53 @@ html{
   margin-left: 20px;
 }
 
+#hr{
+  padding-bottom: 125px;
+}
 
+#getIn{
+  margin-top: 100px;
+}
+
+.ctc-form{
+  margin-bottom: 50px;
+}
+
+#disabled{
+  color: grey;
+}
+#title{
+  margin-top: 50px;
+  margin-bottom:  50px;
+}
+
+#details{
+  padding-bottom: 200px;
+  margin-top: 50px;
+}
+
+.info{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#txt{
+  margin-top: 100px;
+}
+
+#txt::first-letter{
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+#house-infos{
+  margin-top: 50px;
+}
+
+#house-infos2{
+  border-style: solid;
+  padding-bottom: 80px;
+  padding-left: 75px;
+  border-width: 1px;
+}
 /*# sourceMappingURL=style.css.map */

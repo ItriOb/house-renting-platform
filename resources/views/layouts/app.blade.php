@@ -59,7 +59,8 @@
                                                         <li><a href="{{route('houselist')}}">Houses List </a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{{route('about')}}">About Us</a></li>
+                                            <li><a href="{{route('contact')}}">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -70,12 +71,7 @@
                                         <p> <i class="fa fa-phone"></i> 10(256)-928 256</p>
                                     </div>
                                     <div class="social_links d-none d-xl-block">
-                                        <ul>
-                                            <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                            <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                                        </ul>
+                                        <p><a href="">Login</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -106,9 +102,9 @@
                                     <img src="{{asset('assets/img/footer_logo.png')}}" alt="">
                                 </a>
                             </div>
-                            <p>5th flora, 700/D kings road, green <br> lane New York-1782 <br>
-                                <a href="#">+10 367 826 2567</a> <br>
-                                <a href="#">contact@carpenter.com</a>
+                            <p>Hay Salam <br> Agadir<br>
+                                <a href="#">+212600000000</a> <br>
+                                <a href="#">contact@travelo.com</a>
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -148,10 +144,8 @@
                                 Company
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#"> Gallery</a></li>
-                                <li><a href="#"> Contact</a></li>
+                                <li><a href="{{route('about')}}">About</a></li>
+                                <li><a href="{{route('contact')}}"> Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -161,14 +155,10 @@
                                 Popular destination
                             </h3>
                             <ul class="links double_links">
-                                <li><a href="#">Indonesia</a></li>
-                                <li><a href="#">America</a></li>
-                                <li><a href="#">India</a></li>
-                                <li><a href="#">Switzerland</a></li>
-                                <li><a href="#">Italy</a></li>
-                                <li><a href="#">Canada</a></li>
-                                <li><a href="#">Franch</a></li>
-                                <li><a href="#">England</a></li>
+                                <li><a href="#">Agadir</a></li>
+                                <li><a href="#">Marrakech</a></li>
+                                <li><a href="#">Casablanca</a></li>
+                                <li><a href="#">Ifrane</a></li>
                             </ul>
                         </div>
                     </div>
