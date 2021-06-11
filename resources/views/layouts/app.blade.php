@@ -14,6 +14,10 @@
 
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-select.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.mmenu.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style3.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css')}}">
@@ -37,14 +41,14 @@
 
     <!-- header-start -->
     <header>
-        <div class="header-area ">
+        <div class="header-area " id="header-hamid">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="header_bottom_border">
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="{{route('home')}}">
                                         <img src="{{asset('assets/img/logo.png')}}" alt="">
                                     </a>
                                 </div>
@@ -56,7 +60,7 @@
                                             <li><a class="active" href="{{route('home')}}">Home</a></li>
                                             <li>Houses<i class="ti-angle-down"></i>
                                                 <ul class="submenu">
-                                                        <li><a href="{{route('houselist')}}">Houses List </a></li>
+                                                    <li><a href="{{route('houselist')}}">Houses List </a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="{{route('about')}}">About Us</a></li>
@@ -85,12 +89,34 @@
             </div>
         </div>
     </header>
+    @if (Session::get('success'))
+    <div class="alert alert-success">
+        {{ Session::get('success') }}
+    </div>
 
+    @elseif (Session::get('fail'))
+    <div class="alert alert-fail">
+        {{ Session::get('fail') }}
+    </div>
+
+    @endif
+
+    @if (Session::get('booking'))
+    <div class="alert alert-success">
+        {{ Session::get('booking') }}
+    </div>
+
+    @elseif (Session::get('notbooking'))
+    <div class="alert alert-fail">
+        {{ Session::get('notbooking') }}
+    </div>
+
+    @endif
 
     @yield('content')
 
 
-    
+
     <footer class="footer">
         <div class="footer_top">
             <div class="container">
@@ -211,9 +237,11 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved
 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                 </div>
@@ -222,19 +250,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
 
 
-  <!-- Modal -->
-  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="serch_form">
-            <input type="text" placeholder="Search" >
-            <button type="submit">search</button>
+    <!-- Modal -->
+    <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="serch_form">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">search</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
     <!-- link that opens popup -->
-<!--     
+    <!--     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 
@@ -259,9 +288,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{asset('assets/js/plugins.js')}}"></script>
     <script src="{{asset('assets/js/gijgo.min.js')}}"></script>
     <script src="{{asset('assets/js/slick.min.js')}}"></script>
-   
 
-    
+
+
     <!--contact js-->
     <script src="{{asset('asset/js/contact.js')}}"></script>
     <script src="{{asset('asset/js/jquery.ajaxchimp.min.js')}}"></script>
@@ -270,7 +299,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{asset('asset/js/mail-script.js')}}"></script>
 
     <script>
-                $( function() {
+        $( function() {
                 $( "#datepicker1" ).datepicker({
                     dateFormat: "dd/mm/yy"
                 });
@@ -279,11 +308,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 $( "#datepicker2" ).datepicker({
                 });
                 } );
-  </script>
+    </script>
 
 
     <script src="{{asset('assets/js/main.js')}}"></script>
-    
+
 </body>
 
 </html>

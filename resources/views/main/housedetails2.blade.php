@@ -90,16 +90,6 @@
             </div>
         </div>
 
-        <div class="row" id="txt">
-            <div class="col-lg-12">
-                <div class="more_place_btn text-center">
-                    <a class="boxed-btn4"
-                        href="book?checkIn={{$_GET['check_in']}}&checkOut={{$_GET['check_out']}}&price={{$house->price}}&houseId={{$house->id}}">Book
-                        this house</a>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 

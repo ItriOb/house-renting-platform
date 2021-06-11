@@ -6698,6 +6698,10 @@ html{
   color: white;
 }
 
+.label2{
+  color: black;
+}
+
 #houselist{
   margin-bottom: 40px;
 }
@@ -6748,7 +6752,12 @@ html{
 }
 
 #txt{
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 #txt::first-letter{
@@ -6766,4 +6775,66 @@ html{
   padding-left: 75px;
   border-width: 1px;
 }
-/*# sourceMappingURL=style.css.map */
+
+#search{
+  margin-top: 27px;
+}
+
+#upperCarousel{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#carousel-example-generic {
+  margin: 20px auto;
+  width: 400px;
+}
+
+#carousel-custom {
+  margin: 20px auto;
+  width: 400px;
+}
+#carousel-custom .carousel-indicators {
+  margin: 10px 0 0;
+  overflow: auto;
+  position: static;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+}
+#carousel-custom .carousel-indicators li {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  margin: 0 !important;
+  width: auto;
+}
+#carousel-custom .carousel-indicators li img {
+  display: block;
+  opacity: 0.5;
+}
+#carousel-custom .carousel-indicators li.active img {
+  opacity: 1;
+}
+#carousel-custom .carousel-indicators li:hover img {
+  opacity: 0.75;
+}
+#carousel-custom .carousel-outer {
+  position: relative;
+}
+
+#bookyourhouse{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#price{
+  margin-top: 20px;
+}
+
+.mar{
+  padding-right: 20px;
+}

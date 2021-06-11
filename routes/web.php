@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main.home');
-})->name('home');
+Route::get('/', [HomeController::class,'listAllHouses'])->name('home');
 
-Route::get('/houses', function () {
-    return view('main.houseslist');
-})->name('houselist');
+Route::get('/houses', [HomeController::class,'listAllHouses2'])->name('houselist');
 
 Route::get('/results', function () {
     return view('main.houseresults');
@@ -29,10 +26,25 @@ Route::get('/contact', function () {
     return view('main.contact');
 })->name('contact');
 
-Route::get('/about', function () {
-    return view('main.about');
-})->name('about');
+Route::get('/about', [HomeController::class,'about'])->name('about');
 
-Route::get('/details', function () {
-    return view('main.housedetails');
-})->name('details');
+
+Route::get('/details2', function () {
+    return view('main.housedetails2');
+})->name('details2');
+
+Route::match(['GET','POST'],'/search',[HomeController::class,'search'])->name('search');
+
+Route::post('/postMessage',[HomeController::class , 'postMessage'])->name('message');
+
+Route::get('/details',[HomeController::class , 'houseDetails'])->name('details');
+
+Route::get('/details2',[HomeController::class , 'houseDetails2'])->name('details2');
+
+Route::get('image', [HomeController::class,'image']);
+
+Route::get('book', function () {
+    return view('main.booknow');
+})->name('book');
+
+Route::post('finishOrder', [HomeController::class, 'addBooking'])->name('finishOrder');

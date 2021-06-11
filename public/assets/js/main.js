@@ -308,6 +308,15 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
+  $("#book").click(function(){
+    var id = $(this).attr("href");
+    $('html, body').animate({
+      scrollTop: $(id).offset().top - 190
+    }, 100);
+  });
+
 });
 
 
@@ -349,3 +358,4 @@ mailChimp();
 
 
 })(jQuery);	
+

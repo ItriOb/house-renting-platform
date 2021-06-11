@@ -51,13 +51,13 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single_counter text-center">
-                                        <h3  class="counter">378</h3>
+                                        <h3  class="counter">{{count($bookings)}}</h3>
                                         <p>Successful booking</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-4">
                                     <div class="single_counter text-center">
-                                        <h3 class="counter">2263</h3>
+                                        <h3 class="counter">{{count($clients)}}</h3>
                                         <p>Happy Clients</p>
                                     </div>
                                 </div>
